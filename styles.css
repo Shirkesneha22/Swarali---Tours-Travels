@@ -1,0 +1,145 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdfdfd;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar-brand span {
+  font-size: 1.5rem;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #0275d8;
+  margin-bottom: 1rem;
+  animation: slideIn 1s ease-in-out;
+}
+
+.carousel-inner{
+  text-align: center;
+  padding-left: 30%;
+  padding-top: 3%;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.animate-fade {
+  animation: fadeIn 1.2s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+textarea, input {
+  transition: all 0.3s ease;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #0275d8;
+}
+
+/* Vehicles Section */
+#vehicles {
+  background: #f0faff;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #0077b6;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #00b4d8;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+  padding: 10px;
+}
+card-img-top{
+  padding: 15%;
+  margin: 10%;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 123, 255, 0.2);
+}
+
+.car-img{
+  margin: 10%;
+  padding: 10%;
+  border: black;
+}
+
+.card-title {
+  color: #023e8a;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade {
+  animation: fadeInUp 0.8s ease both;
+}
