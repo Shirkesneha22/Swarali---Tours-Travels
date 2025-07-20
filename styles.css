@@ -128,6 +128,11 @@ card-img-top{
   color: #555;
 }
 
+#morePackages {
+  flex-wrap: wrap;
+}
+
+
 /* Simple fade-in animation */
 @keyframes fadeInUp {
   0% {
@@ -142,4 +147,54 @@ card-img-top{
 
 .animate-fade {
   animation: fadeInUp 0.8s ease both;
+}
+/* Optional: Set a max height for large screens */
+@media (min-width: 768px) {
+  .carousel-item img {
+    height: 70vh;
+  }
+}
+
+/* Optional: Taller images on very small screens */
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 50vh;
+  }
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.modal-body img {
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+/* Center the image vertically and horizontally */
+.modal .carousel-item {
+  text-align: center;
+}
+
+.gallery-img {
+  max-height: 80vh;
+  width: auto;
+  object-fit: contain;
+  margin: auto;
+  display: block;
+}
+
+d-block{
+  padding: 5%;
+  margin: 5%;
+}
+
+.gallery-img {
+  max-height: 80vh;
+  width: auto;
+  object-fit: contain;
+  margin: auto;
+  display: block;
 }
